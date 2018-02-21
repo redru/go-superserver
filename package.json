@@ -1,8 +1,14 @@
 {
   "name": "go-superserver",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple go server using Go, Gorilla Mux / Socket, Socket.io, NPM",
+  "repository": "https://github.com/redru/go-superserver",
+  "keywords": [
+    "Go",
+    "Gorilla Mux",
+    "Gorilla Socket",
+    "Socket.io-client"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

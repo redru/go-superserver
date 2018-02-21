@@ -4,7 +4,7 @@ import (
 	"net/http"
 )
 
-// Default
+// Default is
 type Default struct {
 }
 
