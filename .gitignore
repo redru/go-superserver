@@ -3,3 +3,6 @@
 
 # Package lock
 package-lock.json
+
+# Compiled
+dist/

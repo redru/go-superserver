@@ -1,4 +1,5 @@
-npm install
+call npm install
+call npm run bundle:client
 
-go install
-go-superserver
+call go install
+call go-superserver

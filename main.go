@@ -12,7 +12,7 @@ func main() {
 
 	router := sw.NewRouter()
 
-	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./app/")))
+	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
 
 	log.Fatal(http.ListenAndServe(":8080", router))
 }

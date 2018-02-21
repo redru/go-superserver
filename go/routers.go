@@ -59,7 +59,7 @@ var routes = Routes{
 	Route{
 		"SocketHandler",
 		"GET",
-		"/socket",
+		"/socket.io",
 		SocketHandler,
 	},
 }
