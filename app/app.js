@@ -1,18 +1,14 @@
 import io from 'socket.io-client';
 
-const ioInstance = io();
-
-ioInstance.use((socket, next) => {
-    let token = socket.handshake.query.token;
-    if (isValid(token)) {
-      return next();
-    }
-    return next(new Error('authentication error'));
-  });
+const socket = io({
+  upgrade: false,
+  transports: ['websocket']
+});
   
-  // then
-  io.on('connection', (socket) => {
-    let token = socket.handshake.query.token;
-    // ...
-  });
+// then
+socket.on('connection', conn => {
+  let token = conn.handshake.query.token;
+  console.log(token);
+  // ...
+});
   
